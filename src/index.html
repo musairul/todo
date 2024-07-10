@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <h1 class="title">todo</h1>
+
+    <div class="controls-container">
+      <button id="newProject">New project</button>
+      <button class="hide" id="addProject" type="submit" form="inputProject">
+        Add project
+      </button>
+    </div>
+
+    <div class="card-container">
+      <div class="input card hide" id="inputProjectCard">
+        <form id="inputProject">
+          <div class="form-element">
+            <label
+              for="projectTitle"
+              style="font-weight: bold; font-size: x-large; margin-bottom: 10px"
+              >Project name</label
+            >
+            <input
+              type="text"
+              id="projectTitle"
+              required
+              placeholder="Shopping"
+            />
+          </div>
+        </form>
+      </div>
+      <div id="projectsContainer">
+        <!-- <div class="card">
+          <h2 class="project-title">Work</h2>
+          <div class="card-controls">
+            <button class="new-task">New task</button>
+            <button id="deleteProject" class="new-task">Delete project</button>
+          </div>
+          <form id="inputTask" class="form-input hide">
+            <div class="form-element">
+              <label for="taskName">Name</label>
+              <input
+                type="text"
+                id="taskName"
+                required
+                placeholder="Grab groceries"
+                name="taskName"
+              />
+            </div>
+            <div class="form-element">
+              <label for="priority">Priority</label>
+              <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="low">Medium</option>
+                <option value="low">High</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <label for="dueDate">Due date</label>
+              <input type="date" id="dueDate" name="dueDate" />
+            </div>
+          </form>
+          <div class="task-container">
+            <div class="task">
+              <p class="task-text">Grab groceries from lidl</p>
+              <p class="due">27/01/2024</p>
+            </div>
+            <div class="task">
+              <p class="task-text">
+                Grab groceries from lidl adn then go to tesco to buy fanta de
+                limon
+              </p>
+              <p class="due">27/01/2024</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
